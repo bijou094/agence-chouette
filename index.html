@@ -11,15 +11,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
     <link rel="shortcut icon" type="image/png" href="favicon.jpg"> 
-	<link rel="stylesheet" type="text/css" href="style.min.css">	
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
-	<link rel="canonical" href="https://bijou094.github.io/agence-chouette">
+	
     
-	
-	
+	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
+	<script src="./js/jquery.touchSwipe.js" defer></script>
+	<script src="./js/gmaps.js"></script>
+	<link rel="canonical" href="https://bijou094.github.io/agence-chouette">	
 
     <title>La chouette agence concepteur web à lyon:trouver le design de votre choix.</title>
 
@@ -39,7 +42,7 @@
 
 		<nav role="navigation" class="navbar row">
 			<div class="navbar-header">				
-				<a class="navbar-brand" href="#"><img src="img/la-chouette-agence.png" alt="lyon web design logo agence web meilleure agence" height="40" /></a>
+				<a class="navbar-brand" href="#"><img src="img/la-chouette-agence.png" alt="logo chouette agence" height="60" /></a>
 				
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only"> Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"> </span>
@@ -49,9 +52,12 @@
 				<ul class="site-navigation nav navbar-nav">
 					<li>
 						<a href="#">Accueil</a>
+					</li>
+					<li>
+						<a href="#bloc-4-portfolio">Réalisations</a>
 					</li>					
 					<li>
-						<a href="web-designeur.html">page2 &gt;</a>
+						<a href="web-designeur.html">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -65,9 +71,9 @@
 	<article class="container bloc-lg">
 		<div class="row tight-width-whitespace">
 			<div class="col-sm-12">
-				<img src="img/logo.png" class="center-block image-resize-mode" width="100" alt="logo de la marque chouette agence à lyon " />
+				<img src="img/logo.png" class="center-block image-resize-mode" width="150" alt="logo de la marque chouette agence à lyon " />
 				<h1 class="text-center hero-bloc-text tc-white ">
-					La chouette agence concepteur web à lyon
+					<strong>La chouette agence <br>concepteur web à lyon</strong> 
 				</h1>				
 			</div>
 		</div>
@@ -120,10 +126,10 @@
 		</div>
 		<div class="row voffset-lg voffset">
 			<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
-				<h2> <strong>” chouette agence est une excellente agence web !Les</br>
-					web designers ont réussi à capturer l'essence de notre</br>
-					entreprise et à l'intégrer à notre site. Cela nous a aidé à<br>
-					doubler nos ventes en ligne à lyon. ”</strong>
+				<h2> <strong>”chouette agence est une excellente agence web!
+					Les web designers ont réussi à capturer l'essence  
+					de notre entreprise et à l'intégrer à notre site.
+					 Cela nous a aidé à doubler nos ventes en ligne à lyon. ”
 				<h2>
 			    <p>	Guibard,PDG de Â vos fourchettes</p> 				
 
@@ -142,7 +148,17 @@
 					<strong></strong> souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients .</strong> <br>
 				</h2>
 				<p class="text-center white">
-					<strong> Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche.</strong>  <br><br><a class="ltc-white bold-link" href="page2.html">Contactez notre équipe</a><br>
+					 Nous aimons collaborer avec des entrepreneurs créatifs et des
+					  entreprises locale, qu’elles aient besoin de créer un site de
+					   A à Z ou de donner un coup de jeune à leur site. Que vous ayez 
+					   besoin  d’une identité visuelle complète ou d’une refonte de votre
+					    site, n’hésitez pas à nous contacter. Nous travaillerons ensemble 
+						pour créer des sites beau et bien structurés, qui seront facilement
+						 trouvable sur les moteurs de recherche.</strong>
+				<!--	<br><a class="ltc-white bold-link" href="page2.html">Contactez notre équipe</a><br>-->
+				<div class="col-sm-12 text-center">
+					<a href="web-designeur.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contactez notre équipe</a>
+				</div>
 				</p>
 			</div>
 		</div>
@@ -182,7 +198,10 @@
 		</article>
 		<article class="row tight-width-whitespace portfolio-row">
 			<div class="col-sm-6">
-				<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb"><img src="img/3.bmp" class="img-responsive portfolio-thumb" alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/></a>
+				<a href="#" data-lightbox="img/3.bmp" data-gallery-id="gallery-1"
+					 data-caption="Création d'un site internet pour un voyageur" 
+					 data-frame="snapshot-lb"><img src="img/3.bmp" class="img-responsive portfolio-thumb" 
+					 alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/></a>
 				<h3 class="mg-md text-center">
 					Création d'un site internet pour un voyageur
 				</h3>
@@ -259,12 +278,12 @@
 
 </div>
 <!-- Principal conteneur END -->
-	<script defer src="./js/jquery-2.1.0.js"></script>
-	<script defer src="./js/bootstrap.js"></script>
-	<script defer src="./js/blocs.js"></script>
-	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script defer src="./js/gmaps.js"></script>
-	<script defer src="./js/js.min.js"></script>   
+<!--<script defer src="./js/jquery-2.1.0.js"></script>
+<script defer src="./js/bootstrap.js"></script>
+<script defer src="./js/blocs.js"></script>
+<script defer src="./js/jquery.touchSwipe.js" ></script>
+<script defer src="./js/gmaps.min.js"></script> -->
+ 
 
 </body>
 </html>
